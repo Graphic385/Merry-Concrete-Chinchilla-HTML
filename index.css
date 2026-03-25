@@ -14,6 +14,12 @@
   display: contents;
 }
  
+.navigation-thq-navigation-logo-img-elm {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+ 
 .navigation-container4 {
   display: none;
 }
@@ -28,6 +34,13 @@
  
 .navigation-container7 {
   display: contents;
+}
+ 
+@media(max-width: 1600px) {
+  .navigation-thq-navigation-logo-img-elm {
+    width: 232px;
+    height: 155px;
+  }
 }
 
 .add-ons-wrapper {
