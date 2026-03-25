@@ -14,10 +14,14 @@
   display: contents;
 }
  
-.navigation-thq-navigation-logo-img-elm {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.navigation-thq-navigation-logo-icon-elm1 {
+  align-items: center;
+  justify-content: center;
+}
+ 
+.navigation-image {
+  width: 200px;
+  object-fit: cover;
 }
  
 .navigation-container4 {
@@ -34,13 +38,6 @@
  
 .navigation-container7 {
   display: contents;
-}
- 
-@media(max-width: 1600px) {
-  .navigation-thq-navigation-logo-img-elm {
-    width: 232px;
-    height: 155px;
-  }
 }
 
 .footer-wrapper {
