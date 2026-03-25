@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Booking - Merry Concrete Chinchilla</title>
+    <meta property="og:title" content="Booking - Merry Concrete Chinchilla" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Roboto;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: 0.02em;
+        line-height: 1.6;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./booking.css" rel="stylesheet" />
+
+      <div class="booking-container1">
+        <navigation-wrapper class="navigation-wrapper">
+          <!--Navigation component-->
+          <div class="navigation-container1">
+            <div class="navigation-container2">
+              <div class="navigation-container3">
+                <style>
+                  @media (prefers-reduced-motion: reduce) {
+                  .navigation-mobile-overlay.is-active {
+                    animation: none;
+                  }
+                  .navigation-wrapper, .navigation-link, .navigation-mobile-link {
+                    transition: none;
+                  }
+                  }
+                </style>
+              </div>
+            </div>
+            <nav class="navigation-wrapper">
+              <div class="navigation-container">
+                <a href="index.html">
+                  <div
+                    aria-label="GoShine Auto Detailing Home"
+                    class="navigation-logo-link"
+                  >
+                    <div class="navigation-logo-icon">
+                      <svg
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"
+                          ></path>
+                          <circle r="2" cx="7" cy="17"></circle>
+                          <path d="M9 17h6"></path>
+                          <circle r="2" cx="17" cy="17"></circle>
+                        </g>
+                      </svg>
+                    </div>
+                    <span class="navigation-brand-name">GoShine</span>
+                  </div>
+                </a>
+                <div class="navigation-desktop-links">
+                  <a href="index.html">
+                    <div class="navigation-link"><span>Services</span></div>
+                  </a>
+                  <a href="index.html">
+                    <div class="navigation-link"><span>Gallery</span></div>
+                  </a>
+                  <a href="index.html">
+                    <div class="navigation-link"><span>Pricing</span></div>
+                  </a>
+                  <a href="index.html">
+                    <div class="navigation-link"><span>About</span></div>
+                  </a>
+                  <a href="booking.html">
+                    <div class="btn btn-sm btn-primary">
+                      <span>Book Now</span>
+                    </div>
+                  </a>
+                </div>
+                <button
+                  id="navigationMobileToggle"
+                  aria-label="Toggle Navigation Menu"
+                  aria-controls="navigationMobileOverlay"
+                  aria-expanded="false"
+                  class="navigation-mobile-toggle"
+                >
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="navigation-icon-open"
+                  >
+                    <path
+                      d="M4 8h16M4 16h16"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </nav>
+            <div id="navigationMobileOverlay" class="navigation-mobile-overlay">
+              <div class="navigation-overlay-header">
+                <a href="index.html">
+                  <div class="navigation-logo-link">
+                    <div class="navigation-logo-icon">
+                      <svg
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path
+                            d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"
+                          ></path>
+                          <circle r="2" cx="7" cy="17"></circle>
+                          <path d="M9 17h6"></path>
+                          <circle r="2" cx="17" cy="17"></circle>
+                        </g>
+                      </svg>
+                    </div>
+                    <span class="navigation-brand-name">GoShine</span>
+                  </div>
+                </a>
+                <button
+                  id="navigationMobileClose"
+                  aria-label="Close Navigation Menu"
+                  class="navigation-mobile-close"
+                >
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1zm-5.5-3.5l-5 5m0-5l5 5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="navigation-overlay-content">
+                <div class="navigation-mobile-nav">
+                  <a href="index.html">
+                    <div class="navigation-mobile-link">
+                      <span>Services</span>
+                    </div>
+                  </a>
+                  <a href="index.html">
+                    <div class="navigation-mobile-link">
+                      <span>Gallery</span>
+                    </div>
+                  </a>
+                  <a href="index.html">
+                    <div class="navigation-mobile-link">
+                      <span>Pricing</span>
+                    </div>
+                  </a>
+                  <a href="index.html">
+                    <div class="navigation-mobile-link"><span>About</span></div>
+                  </a>
+                  <a href="booking.html">
+                    <div class="navigation-mobile-link">
+                      <span>Booking</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="navigation-mobile-footer">
+                  <p class="navigation-mobile-location">
+                    Richmond Hill • Vaughan • Thornhill
+                  </p>
+                  <a href="booking.html">
+                    <div class="btn-lg btn btn-primary navigation-mobile-cta">
+                      <span>Book Premium Detailing</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="navigation-container4">
+              <div class="navigation-container5">
+                <style>
+                          @keyframes navigationFadeIn {from {opacity: 0;
+                  transform: translateY(-10px);}
+                  to {opacity: 1;
+                  transform: translateY(0);}}
+                </style>
+              </div>
+            </div>
+            <div class="navigation-container6">
+              <div class="navigation-container7">
+                <script defer="" data-name="navigation-logic">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const mobileToggle = document.getElementById("navigationMobileToggle")
+                      const mobileOverlay = document.getElementById("navigationMobileOverlay")
+                      const mobileClose = document.getElementById("navigationMobileClose")
+                      const mobileLinks = document.querySelectorAll(".navigation-mobile-link")
+
+                      function openMenu() {
+                        mobileOverlay.classList.add("is-active")
+                        mobileToggle.setAttribute("aria-expanded", "true")
+                        document.body.style.overflow = "hidden"
+                      }
+
+                      function closeMenu() {
+                        mobileOverlay.classList.remove("is-active")
+                        mobileToggle.setAttribute("aria-expanded", "false")
+                        document.body.style.overflow = ""
+                      }
+
+                      mobileToggle.addEventListener("click", openMenu)
+                      mobileClose.addEventListener("click", closeMenu)
+
+                      mobileLinks.forEach((link) => {
+                        link.addEventListener("click", closeMenu)
+                      })
+
+                      // Close on escape key
+                      document.addEventListener("keydown", (e) => {
+                        if (e.key === "Escape" && mobileOverlay.classList.contains("is-active")) {
+                          closeMenu()
+                        }
+                      })
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </navigation-wrapper>
+        <header class="header-minimal">
+          <div class="header-container">
+            <div class="header-logo">
+              <div class="logo-icon-wrapper">
+                <svg
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"
+                    ></path>
+                    <circle r="2" cx="7" cy="17"></circle>
+                    <path d="M9 17h6"></path>
+                    <circle r="2" cx="17" cy="17"></circle>
+                  </g>
+                </svg>
+              </div>
+              <span class="logo-text">GoShine Auto Detailing</span>
+            </div>
+          </div>
+        </header>
+        <section class="booking-section">
+          <div class="booking-container">
+            <div class="booking-header">
+              <h2 class="section-title">Book Your Service</h2>
+              <p class="section-subtitle">
+                Premium mobile detailing at your doorstep in Richmond Hill,
+                Vaughan, and Thornhill.
+              </p>
+            </div>
+            <div class="booking-form-wrapper">
+              <iframe
+                id="tally-iframe"
+                src="https://tally.so/embed/EkLKq2?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
+                title="GoShine Auto Detailing Booking Form"
+                width="100%"
+                height="800"
+                loading="lazy"
+                frameborder="0"
+                marginwidth="0"
+                marginheight="0"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+        <div class="booking-container2">
+          <div class="booking-container3">
+            <style>
+                      @keyframes fadeInForm {from {opacity: 0;
+              transform: translateY(20px);}
+              to {opacity: 1;
+              transform: translateY(0);}}
+            </style>
+          </div>
+        </div>
+        <div class="booking-container4">
+          <div class="booking-container5">
+            <script defer="" data-name="booking-form-handler">
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                const tallyIframe = document.getElementById('tally-iframe');
+
+                window.addEventListener('message', (e) => {
+                  if (e.data && typeof e.data === 'string' && e.data.includes('tally-close')) {
+                    // Handle form completion or closure if needed
+                  }
+
+                  if (e.data && e.data.type === 'tally-resize') {
+                    const height = e.data.height;
+                    if (tallyIframe) {
+                      tallyIframe.style.height = height + 'px';
+                    }
+                  }
+                });
+                })()
+              });
+            </script>
+          </div>
+        </div>
+        <footer-wrapper class="footer-wrapper">
+          <!--Footer component-->
+          <div class="footer-container1">
+            <footer class="footer-root">
+              <div class="footer-container">
+                <div class="footer-grid">
+                  <div class="footer-column footer-brand-col">
+                    <div class="footer-logo-wrapper">
+                      <span class="footer-brand-name">GoShine</span>
+                      <span class="footer-brand-tagline">Auto Detailing</span>
+                    </div>
+                    <p class="section-content footer-description">
+                      Premium mobile car detailing serving Richmond Hill,
+                      Vaughan, and Thornhill. We bring the showroom shine
+                      directly to your doorstep with professional care and
+                      attention to detail.
+                    </p>
+                    <div class="footer-social-links">
+                      <a href="#">
+                        <div aria-label="Instagram" class="footer-social-icon">
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <rect
+                                x="2"
+                                y="2"
+                                rx="5"
+                                ry="5"
+                                width="20"
+                                height="20"
+                              ></rect>
+                              <path
+                                d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                              ></path>
+                            </g>
+                          </svg>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div aria-label="Facebook" class="footer-social-icon">
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="footer-column footer-links-col">
+                    <h2 class="section-subtitle footer-col-title">
+                      Quick Links
+                    </h2>
+                    <nav class="footer-nav">
+                      <ul class="footer-link-list">
+                        <li>
+                          <a href="Homepage">
+                            <div class="footer-link"><span>Home</span></div>
+                          </a>
+                        </li>
+                        <a href="booking.html">
+                          <li>
+                            <div class="footer-link"><span>Booking</span></div>
+                          </li>
+                        </a>
+                        <li>
+                          <a href="#services">
+                            <div class="footer-link">
+                              <span>Our Services</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#gallery">
+                            <div class="footer-link">
+                              <span>Recent Work</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#booking">
+                            <div class="footer-link">
+                              <span>Book Appointment</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#faq">
+                            <div class="footer-link">
+                              <span>Common Questions</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="footer-column footer-contact-col">
+                    <h2 class="section-subtitle footer-col-title">
+                      Get In Touch
+                    </h2>
+                    <div class="footer-contact-info">
+                      <div class="footer-contact-item">
+                        <div class="footer-icon-box">
+                          <svg
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                              ></path>
+                              <circle r="3" cx="12" cy="10"></circle>
+                            </g>
+                          </svg>
+                        </div>
+                        <span class="section-content">
+                          Richmond Hill / Vaughan / Thornhill
+                        </span>
+                      </div>
+                      <div class="footer-contact-item">
+                        <div class="footer-icon-box">
+                          <svg
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                        <a href="tel:1234567890">
+                          <div class="footer-link">
+                            <span>(123) 456-7890</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="footer-contact-item">
+                        <div class="footer-icon-box">
+                          <svg
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                              ></path>
+                              <rect
+                                x="2"
+                                y="4"
+                                rx="2"
+                                width="20"
+                                height="16"
+                              ></rect>
+                            </g>
+                          </svg>
+                        </div>
+                        <a href="mailto:info@goshineauto.ca?subject=">
+                          <div class="footer-link">
+                            <span>info@goshineauto.ca</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="footer-cta-wrapper">
+                      <a href="booking.html">
+                        <div class="footer-thq-btn-elm btn btn-sm btn-primary">
+                          <span>Book Mobile Service</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-bottom">
+                  <div class="footer-divider"></div>
+                  <div class="footer-legal">
+                    <p class="footer-copyright">
+                      &amp;copy; 2024 GoShine Auto Detailing. All rights
+                      reserved.
+                    </p>
+                    <div class="footer-legal-links">
+                      <a href="#">
+                        <div class="footer-legal-link">
+                          <span>Privacy Policy</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="footer-legal-link">
+                          <span>Terms of Service</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <div class="footer-container2">
+              <div class="footer-container3">
+                <script defer="" data-name="footer-interactivity">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      // Minimal script for subtle entry animation if needed
+                      // Current animation level: MEDIUM
+                      const footerObserver = new IntersectionObserver(
+                        (entries) => {
+                          entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                              const columns = entry.target.querySelectorAll(".footer-column")
+                              columns.forEach((col, index) => {
+                                col.style.opacity = "1"
+                                col.style.transform = "translateY(0)"
+                                col.style.transition = `opacity 0.6s ease-out ${index * 0.15}s, transform 0.6s ease-out ${index * 0.15}s`
+                              })
+                              footerObserver.unobserve(entry.target)
+                            }
+                          })
+                        },
+                        { threshold: 0.1 }
+                      )
+
+                      const footerGrid = document.querySelector(".footer-grid")
+                      if (footerGrid) {
+                        const columns = footerGrid.querySelectorAll(".footer-column")
+                        columns.forEach((col) => {
+                          col.style.opacity = "0"
+                          col.style.transform = "translateY(20px)"
+                        })
+                        footerObserver.observe(footerGrid)
+                      }
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </footer-wrapper>
+      </div>
+      <link
+        rel="canonical"
+        href="https://merry-concrete-chinchilla-8tjyge.teleporthq.site/booking"
+      />
+    </div>
+  </body>
+</html>
