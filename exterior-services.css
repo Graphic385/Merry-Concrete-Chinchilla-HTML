@@ -142,23 +142,15 @@
   align-items: center;
 }
 
-.booking-container1 {
+.exterior-services-container1 {
   width: 100%;
   min-height: 100vh;
 }
  
-.booking-container2 {
+.exterior-services-container2 {
   display: none;
 }
  
-.booking-container3 {
-  display: contents;
-}
- 
-.booking-container4 {
-  display: none;
-}
- 
-.booking-container5 {
+.exterior-services-container3 {
   display: contents;
 }

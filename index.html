@@ -83,6 +83,15 @@
       rel="stylesheet"
       href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
     />
+    <style>
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -143,6 +152,42 @@
                       <span>Book Now</span>
                     </div>
                   </a>
+                  <div data-thq="thq-dropdown" class="navigation-thq-dropdown1">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="navigation-thq-dropdown-toggle1"
+                    >
+                      <span>More</span>
+                      <div
+                        data-thq="thq-dropdown-arrow"
+                        class="navigation-thq-dropdown-arrow1"
+                      >
+                        <svg viewBox="0 0 1024 1024" class="navigation-icon10">
+                          <path d="M426 726v-428l214 214z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <ul
+                      data-thq="thq-dropdown-list"
+                      class="navigation-thq-dropdown-list1"
+                    >
+                      <a href="exterior-services.html">
+                        <div class="navigation-link">
+                          <span>Exterior Services</span>
+                        </div>
+                      </a>
+                      <a href="interior-services.html">
+                        <div class="navigation-link">
+                          <span>Interior Services</span>
+                        </div>
+                      </a>
+                      <a href="full-detail.html">
+                        <div class="navigation-link">
+                          <span>Full Detail</span>
+                        </div>
+                      </a>
+                    </ul>
+                  </div>
                 </div>
                 <button
                   id="navigationMobileToggle"
@@ -246,6 +291,42 @@
                       <span>Booking</span>
                     </div>
                   </a>
+                  <div data-thq="thq-dropdown" class="navigation-thq-dropdown2">
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="navigation-thq-dropdown-toggle2"
+                    >
+                      <span>More</span>
+                      <div
+                        data-thq="thq-dropdown-arrow"
+                        class="navigation-thq-dropdown-arrow2"
+                      >
+                        <svg viewBox="0 0 1024 1024" class="navigation-icon21">
+                          <path d="M426 726v-428l214 214z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <ul
+                      data-thq="thq-dropdown-list"
+                      class="navigation-thq-dropdown-list2"
+                    >
+                      <a href="exterior-services.html">
+                        <div class="navigation-mobile-link">
+                          <span>Exterior Services</span>
+                        </div>
+                      </a>
+                      <a href="interior-services.html">
+                        <div class="navigation-mobile-link">
+                          <span>Interior Services</span>
+                        </div>
+                      </a>
+                      <a href="full-detail.html">
+                        <div class="navigation-mobile-link">
+                          <span>Full Detail</span>
+                        </div>
+                      </a>
+                    </ul>
+                  </div>
                 </div>
                 <div class="navigation-mobile-footer">
                   <p class="navigation-mobile-location">
@@ -378,82 +459,492 @@
               </p>
             </div>
             <div class="services-grid">
-              <div class="service-card">
+              <div data-service="express-exterior" class="service-card">
                 <div class="service-image">
                   <img
-                    alt="Exterior Paint Correction"
-                    src="https://images.pexels.com/photos/6873080/pexels-photo-6873080.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/4870702/pexels-photo-4870702.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    alt="Express Exterior Car Wash"
                   />
                 </div>
-                <div class="service-content">
-                  <h3 class="service-name">Exterior Paint Correction</h3>
-                  <p class="section-content">
-                    Remove swirls, scratches, and oxidation to restore that
-                    mirror-like finish.
+                <div class="service-card-content">
+                  <h3 class="service-name">Express Exterior Wash</h3>
+                  <p class="service-description">
+                    Quick but thorough exterior cleaning for a brilliant shine.
                   </p>
-                  <div class="service-meta">
-                    <span class="meta-item">3-5 Hours</span>
-                    <span class="meta-item">From $249</span>
+                  <div class="service-card-footer">
+                    <span class="starting-price">Starting at $40</span>
+                    <a
+                      href="exterior-services.html"
+                      class="home-thq-view-details-elm1 view-details"
+                    >
+                      View Details →
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="service-card">
+              <div data-service="premium-exterior" class="service-card">
                 <div class="service-image">
                   <img
-                    alt="Interior Deep Clean"
-                    src="https://images.pexels.com/photos/6873185/pexels-photo-6873185.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/6872582/pexels-photo-6872582.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    alt="Premium Exterior Car Wash"
                   />
                 </div>
-                <div class="service-content">
-                  <h3 class="service-name">Interior Deep Clean</h3>
-                  <p class="section-content">
-                    Steam cleaning, leather conditioning, and extraction for a
-                    sterile, fresh cabin.
+                <div class="service-card-content">
+                  <h3 class="service-name">Premium Exterior Wash</h3>
+                  <p class="service-description">
+                    Deep clean with SiO2 protection for lasting results.
                   </p>
-                  <div class="service-meta">
-                    <span class="meta-item">2-4 Hours</span>
-                    <span class="meta-item">From $149</span>
+                  <div class="service-card-footer">
+                    <span class="starting-price">Starting at $70</span>
+                    <a
+                      href="exterior-services.html"
+                      class="home-thq-view-details-elm2 view-details"
+                    >
+                      View Details →
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="service-card">
+              <div data-service="express-interior" class="service-card">
                 <div class="service-image">
                   <img
-                    alt="Ceramic Coating"
-                    src="https://images.pexels.com/photos/6872599/pexels-photo-6872599.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/5233264/pexels-photo-5233264.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    alt="Express Interior Cleaning"
                   />
                 </div>
-                <div class="service-content">
-                  <h3 class="service-name">Ceramic Coating</h3>
-                  <p class="section-content">
-                    Ultimate hydrophobic protection and gloss that lasts for
-                    years, not weeks.
+                <div class="service-card-content">
+                  <h3 class="service-name">Express Interior Clean</h3>
+                  <p class="service-description">
+                    Complete vacuum and surface refresh for your cabin.
                   </p>
-                  <div class="service-meta">
-                    <span class="meta-item">6-8 Hours</span>
-                    <span class="meta-item">From $599</span>
+                  <div class="service-card-footer">
+                    <span class="starting-price">Starting at $60</span>
+                    <a
+                      href="interior-services.html"
+                      class="home-thq-view-details-elm3 view-details"
+                    >
+                      View Details →
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="service-card">
+              <div data-service="premium-interior" class="service-card">
                 <div class="service-image">
                   <img
-                    alt="Maintenance Packages"
-                    src="https://images.pexels.com/photos/6872577/pexels-photo-6872577.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    src="https://images.pexels.com/photos/5233285/pexels-photo-5233285.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    alt="Premium Interior Cleaning"
                   />
                 </div>
-                <div class="service-content">
-                  <h3 class="service-name">Maintenance Packages</h3>
-                  <p class="section-content">
-                    Bi-weekly or monthly visits to keep your car in pristine
-                    condition year-round.
+                <div class="service-card-content">
+                  <h3 class="service-name">Premium Interior Clean</h3>
+                  <p class="service-description">
+                    Deep shampoo and protective finish for like-new interior.
                   </p>
-                  <div class="service-meta">
-                    <span class="meta-item">1.5 Hours</span>
-                    <span class="meta-item">From $89</span>
+                  <div class="service-card-footer">
+                    <span class="starting-price">Starting at $100</span>
+                    <a
+                      href="interior-services.html"
+                      class="home-thq-view-details-elm4 view-details"
+                    >
+                      View Details →
+                    </a>
                   </div>
                 </div>
               </div>
+              <div
+                data-service="full-detail"
+                class="home-thq-service-card-elm5 service-card"
+              >
+                <div class="home-thq-popular-badge-elm">
+                  <span>Most Popular</span>
+                </div>
+                <div class="service-image">
+                  <img
+                    src="https://images.pexels.com/photos/6873174/pexels-photo-6873174.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                    alt="Full Interior and Exterior Detail"
+                  />
+                </div>
+                <div class="service-card-content">
+                  <h3 class="service-name">
+                    Premium Interior &amp; Exterior Detail
+                  </h3>
+                  <p class="service-description">
+                    The complete package. Inside and out like new.
+                  </p>
+                  <div class="service-card-footer">
+                    <span class="starting-price">Starting at $140</span>
+                    <a
+                      href="full-detail.html"
+                      class="home-thq-view-details-elm5 view-details"
+                    >
+                      View Details →
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modal-express-exterior" class="service-modal">
+            <div
+              onclick="closeServiceModal('express-exterior')"
+              class="service-modal-overlay"
+            ></div>
+            <div class="service-modal-content">
+              <button
+                onclick="closeServiceModal('express-exterior')"
+                aria-label="Close modal"
+                class="button service-modal-close"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M18 6L6 18M6 6l12 12"></path>
+                </svg>
+              </button>
+              <div class="service-modal-header">
+                <h3>Express Exterior Wash</h3>
+                <p class="modal-subtitle">
+                  Quick but thorough exterior cleaning
+                </p>
+              </div>
+              <div class="service-modal-body">
+                <ul class="service-features list">
+                  <li class="list-item">
+                    <span>Safe Pressure Wash &amp; Foam Bath</span>
+                  </li>
+                  <li class="list-item">
+                    <span>Hand Wash &amp; Towel Dry</span>
+                  </li>
+                  <li class="list-item"><span>Wheel &amp; Tire Clean</span></li>
+                  <li class="list-item"><span>Tire Dressing</span></li>
+                  <li class="list-item"><span>Door Jamb Wipe-Down</span></li>
+                </ul>
+                <div class="service-pricing">
+                  <h4>Pricing</h4>
+                  <div class="pricing-row">
+                    <span class="vehicle-type">Sedan</span>
+                    <span class="price">$40</span>
+                  </div>
+                  <div class="pricing-row">
+                    <span class="vehicle-type">SUV</span>
+                    <span class="price">$50</span>
+                  </div>
+                </div>
+              </div>
+              <div class="service-modal-footer">
+                <a href="booking.html">
+                  <div class="btn btn-primary btn-lg">
+                    <span>Book This Service</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="modal-premium-exterior" class="service-modal">
+            <div
+              onclick="closeServiceModal('premium-exterior')"
+              class="service-modal-overlay"
+            ></div>
+            <div class="service-modal-content">
+              <button
+                onclick="closeServiceModal('premium-exterior')"
+                aria-label="Close modal"
+                class="button service-modal-close"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M18 6L6 18M6 6l12 12"></path>
+                </svg>
+              </button>
+              <div class="service-modal-header">
+                <h3>Premium Exterior Wash</h3>
+                <p class="modal-subtitle">Deep clean with lasting protection</p>
+              </div>
+              <div class="service-modal-body">
+                <ul class="service-features list">
+                  <li class="list-item">
+                    <span>Safe Hand Wash &amp; De-Bug</span>
+                  </li>
+                  <li class="list-item">
+                    <span>Deep Wheel &amp; Well Clean</span>
+                  </li>
+                  <li class="list-item"><span>Precision Brush Detail</span></li>
+                  <li class="list-item">
+                    <span>6-Month SiO2 Protection</span>
+                  </li>
+                  <li class="list-item">
+                    <span>Trim &amp; Tire Restoration</span>
+                  </li>
+                  <li class="list-item"><span>Door &amp; Trunk Jambs</span></li>
+                </ul>
+                <div class="service-pricing">
+                  <h4>Pricing</h4>
+                  <div class="pricing-row">
+                    <span class="vehicle-type">Sedan</span>
+                    <span class="price">$70</span>
+                  </div>
+                  <div class="pricing-row">
+                    <span class="vehicle-type">SUV</span>
+                    <span class="price">$80</span>
+                  </div>
+                </div>
+              </div>
+              <div class="service-modal-footer">
+                <a href="booking.html">
+                  <div class="btn btn-primary btn-lg">
+                    <span>Book This Service</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="modal-express-interior" class="service-modal">
+            <div
+              onclick="closeServiceModal('express-interior')"
+              class="service-modal-overlay"
+            ></div>
+            <div class="service-modal-content">
+              <button
+                onclick="closeServiceModal('express-interior')"
+                aria-label="Close modal"
+                class="button service-modal-close"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M18 6L6 18M6 6l12 12"></path>
+                </svg>
+              </button>
+              <div class="service-modal-header">
+                <h3>Express Interior Clean</h3>
+                <p class="modal-subtitle">Complete cabin refresh</p>
+              </div>
+              <div class="service-modal-body">
+                <ul class="service-features list">
+                  <li class="list-item">
+                    <span>Complete Interior Vacuum</span>
+                  </li>
+                  <li class="list-item"><span>Surface Wipe-Down</span></li>
+                  <li class="list-item"><span>Door Jamb Refresh</span></li>
+                  <li class="list-item"><span>Rubber Mat Wash</span></li>
+                  <li class="list-item"><span>Light Spot Cleaning</span></li>
+                  <li class="list-item"><span>Streak-Free Glass</span></li>
+                </ul>
+                <div class="service-pricing">
+                  <h4>Pricing</h4>
+                  <div class="pricing-row">
+                    <span class="vehicle-type">Sedan</span>
+                    <span class="price">$60</span>
+                  </div>
+                  <div class="pricing-row">
+                    <span class="vehicle-type">SUV</span>
+                    <span class="price">$70</span>
+                  </div>
+                  <div class="pricing-row">
+                    <span class="vehicle-type">Truck/Large SUV/Minivan</span>
+                    <span class="price">$80</span>
+                  </div>
+                </div>
+              </div>
+              <div class="service-modal-footer">
+                <a href="booking.html">
+                  <div class="btn btn-primary btn-lg">
+                    <span>Book This Service</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="modal-premium-interior" class="service-modal">
+            <div
+              onclick="closeServiceModal('premium-interior')"
+              class="service-modal-overlay"
+            ></div>
+            <div class="service-modal-content">
+              <button
+                onclick="closeServiceModal('premium-interior')"
+                aria-label="Close modal"
+                class="button service-modal-close"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M18 6L6 18M6 6l12 12"></path>
+                </svg>
+              </button>
+              <div class="service-modal-header">
+                <h3>Premium Interior Clean</h3>
+                <p class="modal-subtitle">Deep clean with protective finish</p>
+              </div>
+              <div class="service-modal-body">
+                <ul class="service-features list">
+                  <li class="list-item">
+                    <span>Deep Carpet &amp; Mat Shampoo</span>
+                  </li>
+                  <li class="list-item">
+                    <span>Precision Surface Cleaning</span>
+                  </li>
+                  <li class="list-item"><span>Door &amp; Trunk Jambs</span></li>
+                  <li class="list-item">
+                    <span>3-Month Protective Finish</span>
+                  </li>
+                  <li class="list-item"><span>Crystal Clear Glass</span></li>
+                </ul>
+                <div class="service-pricing">
+                  <h4>Pricing</h4>
+                  <div class="pricing-row">
+                    <span class="vehicle-type">Sedan</span>
+                    <span class="price">$100</span>
+                  </div>
+                  <div class="pricing-row">
+                    <span class="vehicle-type">SUV</span>
+                    <span class="price">$120</span>
+                  </div>
+                  <div class="pricing-row">
+                    <span class="vehicle-type">Truck/Large SUV/Minivan</span>
+                    <span class="price">$130</span>
+                  </div>
+                </div>
+              </div>
+              <div class="service-modal-footer">
+                <a href="booking.html">
+                  <div class="btn btn-primary btn-lg">
+                    <span>Book This Service</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="modal-full-detail" class="service-modal">
+            <div
+              onclick="closeServiceModal('full-detail')"
+              class="service-modal-overlay"
+            ></div>
+            <div class="service-modal-content">
+              <button
+                onclick="closeServiceModal('full-detail')"
+                aria-label="Close modal"
+                class="button service-modal-close"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M18 6L6 18M6 6l12 12"></path>
+                </svg>
+              </button>
+              <div class="service-modal-header">
+                <div class="home-thq-modal-badge-elm">
+                  <span>Most Popular</span>
+                </div>
+                <h3>Premium Interior &amp; Exterior Detail</h3>
+                <p class="modal-subtitle">The complete detailing experience</p>
+              </div>
+              <div class="service-modal-body">
+                <ul class="service-features list">
+                  <li class="list-item">
+                    <span>Deep Hand Wash &amp; De-Bug</span>
+                  </li>
+                  <li class="list-item">
+                    <span>Total Wheel &amp; Well Care</span>
+                  </li>
+                  <li class="list-item"><span>Precision Brush Detail</span></li>
+                  <li class="list-item">
+                    <span>Deep Shampoo &amp; Extraction</span>
+                  </li>
+                  <li class="list-item">
+                    <span>6-Month SiO2 Protection</span>
+                  </li>
+                  <li class="list-item">
+                    <span>Advanced Surface Restoration</span>
+                  </li>
+                  <li class="list-item"><span>Complete Jamb Cleaning</span></li>
+                  <li class="list-item"><span>Crystal Clear Glass</span></li>
+                </ul>
+                <div class="service-pricing">
+                  <h4>Pricing</h4>
+                  <div class="pricing-row">
+                    <span class="vehicle-type">Sedan</span>
+                    <span class="price">$140</span>
+                  </div>
+                  <div class="pricing-row">
+                    <span class="vehicle-type">SUV</span>
+                    <span class="price">$170</span>
+                  </div>
+                  <div class="pricing-row">
+                    <span class="vehicle-type">Truck/Large SUV/Minivan</span>
+                    <span class="price">$180</span>
+                  </div>
+                </div>
+              </div>
+              <div class="service-modal-footer">
+                <a href="booking.html">
+                  <div class="btn btn-primary btn-lg">
+                    <span>Book This Service</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="home-container3">
+            <div class="home-container4">
+              <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                  (function(){
+                        function openServiceModal(serviceId) {
+                          const modal = document.getElementById("modal-" + serviceId)
+                          if (modal) {
+                            modal.classList.add("is-active")
+                            document.body.style.overflow = "hidden"
+                          }
+                        }
+
+                        function closeServiceModal(serviceId) {
+                          const modal = document.getElementById("modal-" + serviceId)
+                          if (modal) {
+                            modal.classList.remove("is-active")
+                            document.body.style.overflow = ""
+                          }
+                        }
+
+                        // Close modal on Escape key
+                        document.addEventListener("keydown", (e) => {
+                          if (e.key === "Escape") {
+                            const activeModal = document.querySelector(".service-modal.is-active")
+                            if (activeModal) {
+                              activeModal.classList.remove("is-active")
+                              document.body.style.overflow = ""
+                            }
+                          }
+                        })
+                      })()
+                });
+              </script>
             </div>
           </div>
         </section>
@@ -943,8 +1434,8 @@
             </div>
           </div>
         </section>
-        <div class="home-container4">
-          <div class="home-container5">
+        <div class="home-container6">
+          <div class="home-container7">
             <style>
               section {
                 position: relative;
@@ -953,8 +1444,8 @@
             </style>
           </div>
         </div>
-        <div class="home-container6">
-          <div class="home-container7">
+        <div class="home-container8">
+          <div class="home-container9">
             <script>
               document.addEventListener('DOMContentLoaded', function() {
                 ;(function () {
@@ -1287,6 +1778,13 @@
                 </script>
               </div>
             </div>
+            <nav class="footer-thq-navlinks-elm">
+              <a href="index.html">Home</a>
+              <a href="booking.html">Booking</a>
+              <a href="exterior-services.html">Exterior Services</a>
+              <a href="interior-services.html">Interior Services</a>
+              <a href="full-detail.html">Full Detail</a>
+            </nav>
           </div>
         </footer-wrapper>
       </div>

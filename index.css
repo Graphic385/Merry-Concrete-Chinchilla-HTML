@@ -24,6 +24,76 @@
   object-fit: cover;
 }
  
+.navigation-thq-dropdown1 {
+  cursor: pointer;
+  display: inline-block;
+  padding: 4px 8px;
+  position: relative;
+  border-color: rgba(0, 0, 0, 0.45);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+}
+ 
+.navigation-thq-dropdown-toggle1 {
+  gap: 4px;
+  display: inline-flex;
+  align-items: center;
+}
+ 
+.navigation-thq-dropdown-arrow1 {
+  transition: 0.3s;
+}
+ 
+.navigation-icon10 {
+  width: 18px;
+  height: 18px;
+}
+ 
+.navigation-thq-dropdown-list1 {
+  display: none;
+  z-index: 100;
+  position: absolute;
+  min-width: 100%;
+  flex-direction: column;
+  list-style-type: none;
+}
+ 
+.navigation-thq-dropdown2 {
+  cursor: pointer;
+  display: inline-block;
+  padding: 4px 8px;
+  position: relative;
+  border-color: rgba(0, 0, 0, 0.45);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+}
+ 
+.navigation-thq-dropdown-toggle2 {
+  gap: 4px;
+  display: inline-flex;
+  align-items: center;
+}
+ 
+.navigation-thq-dropdown-arrow2 {
+  transition: 0.3s;
+}
+ 
+.navigation-icon21 {
+  width: 18px;
+  height: 18px;
+}
+ 
+.navigation-thq-dropdown-list2 {
+  display: none;
+  z-index: 100;
+  position: absolute;
+  min-width: 100%;
+  flex-direction: column;
+  list-style-type: none;
+}
+ 
 .navigation-container4 {
   display: none;
 }
@@ -38,6 +108,12 @@
  
 .navigation-container7 {
   display: contents;
+}
+ 
+@media(max-width: 1600px) {
+  .navigation-image {
+    align-self: center;
+  }
 }
 
 .add-ons-wrapper {
@@ -75,17 +151,76 @@
 .footer-container3 {
   display: contents;
 }
+ 
+.footer-thq-navlinks-elm {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
 
 .home-container1 {
   width: 100%;
   min-height: 100vh;
 }
  
-.home-container4 {
+.home-thq-view-details-elm1 {
+  text-decoration: none;
+}
+ 
+.home-thq-view-details-elm2 {
+  text-decoration: none;
+}
+ 
+.home-thq-view-details-elm3 {
+  text-decoration: none;
+}
+ 
+.home-thq-view-details-elm4 {
+  text-decoration: none;
+}
+ 
+.home-thq-service-card-elm5 {
+  border: 2px solid var(--color-secondary);
+  position: relative;
+}
+ 
+.home-thq-popular-badge-elm {
+  top: -1px;
+  color: var(--color-on-secondary);
+  right: var(--spacing-xl);
+  padding: var(--spacing-xs) var(--spacing-md);
+  z-index: 2;
+  position: absolute;
+  font-size: var(--font-size-xs);
+  background: var(--color-secondary);
+  font-weight: var(--font-weight-medium);
+  border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.home-thq-view-details-elm5 {
+  text-decoration: none;
+}
+ 
+.home-thq-modal-badge-elm {
+  color: var(--color-on-secondary);
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-md);
+  font-size: var(--font-size-xs);
+  background: var(--color-secondary);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-sm);
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.home-container3 {
   display: none;
 }
  
-.home-container5 {
+.home-container4 {
   display: contents;
 }
  
@@ -94,5 +229,13 @@
 }
  
 .home-container7 {
+  display: contents;
+}
+ 
+.home-container8 {
+  display: none;
+}
+ 
+.home-container9 {
   display: contents;
 }

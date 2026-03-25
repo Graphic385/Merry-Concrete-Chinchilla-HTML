@@ -142,23 +142,15 @@
   align-items: center;
 }
 
-.booking-container1 {
+.interior-services-container1 {
   width: 100%;
   min-height: 100vh;
 }
  
-.booking-container2 {
+.interior-services-container2 {
   display: none;
 }
  
-.booking-container3 {
-  display: contents;
-}
- 
-.booking-container4 {
-  display: none;
-}
- 
-.booking-container5 {
+.interior-services-container3 {
   display: contents;
 }
